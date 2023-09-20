@@ -11,16 +11,16 @@
 
         <collision>
             <geometry>
-                <box size="2 1.3 0.4" />
+                <cylinder length="25" radius="30" />
             </geometry>
         </collision>
 
         <visual>
             <geometry>
-                <box size="2 1.3 0.4" />
+                <cylinder length="25" radius="30" />
             </geometry>
-            <material name="Red">
-                <color rgba="1 0 0 1" />
+            <material name="Blue">
+                <color rgba="0 0 1 1" />
             </material>
         </visual>
     </link>

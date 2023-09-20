@@ -11,13 +11,13 @@
 
         <collision>
             <geometry>
-                <cylinder length="25" radius="30" />
+                <cylinder length=".30" radius=".25"/>
             </geometry>
         </collision>
 
         <visual>
             <geometry>
-                <cylinder length="25" radius="30" />
+                <cylinder length=".30" radius=".25"/>
             </geometry>
             <material name="Blue">
                 <color rgba="0 0 1 1" />
@@ -27,7 +27,7 @@
     
     <!-- Joint - chassis / left wheel -->
     <joint name="joint_chassis_left_wheel" type="continuous">
-        <origin rpy="0 0 0" xyz="-0.5 0.65 0" />
+        <origin rpy="0 0 0" xyz="-0.25 0.65 0" />
         <child link="link_left_wheel" />
         <parent link="link_chassis" />
         <axis rpy="0 0 0" xyz="0 1 0" />
@@ -44,13 +44,13 @@
         </inertial>
 
         <collision>
-            <origin rpy="1.5707 0 0" xyz="0 0.18 0" />
+            <origin rpy="1.5707 0 0" xyz=".25 0.18 0" />
             <geometry>
                 <cylinder length="0.12" radius="0.4"/>
             </geometry>
         </collision>
         <visual>
-            <origin rpy="1.5707 0 0" xyz="0 0.18 0" />
+            <origin rpy="1.5707 0 0" xyz=".25 0.18 0" />
             <geometry>
                 <cylinder length="0.12" radius="0.4"/>
             </geometry>
